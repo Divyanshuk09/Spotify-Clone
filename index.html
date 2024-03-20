@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wooble - Web Player:Music for everyone</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left">
+            <div class="p-1 bg-grey border font-1">
+                <div class="home">
+                    <div class="logo">
+                        <img class="Wooble" src="left svg/logo with text.svg" alt="Logo " />
+                        <img class="close" src="left svg/close-icon.svg" alt="">
+                    </div>
+                    <ul style="padding-top: 5vh;" class="font-1 cursor">
+                        <li><img class="invert" src="left svg/home.svg" alt="home">Home</li>
+                        <li><img class="invert" src="left svg/search.svg" alt="search">Search</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="library bg-grey border m-1 font-1">
+                <div class="heading">
+                    <img class="invert" src="left svg/library.svg" alt="library">
+                    <h2 class="font-1 cursor">Your Library</h2>
+                    <img class="plus invert" src="left svg/plus.svg" alt="plus">
+                </div>
+                <div class="songList">
+                    <ul class="scrollbar">
+
+                    </ul>
+                </div>
+                <div class="left-footer ">
+                    <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                            Center</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="right scrollbar bg-grey border m-1 font-1">
+            <div class="header">
+                <div class="left-right-nav">
+                    <img class="hamburger invert" src="right svg/hamburger-menu-icon.svg" alt="hamburger">
+                    <img src="right svg/left.svg" alt="left">
+                    <img class="invert" src="right svg/right.svg" alt="right">
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="wooble-playlist">
+                <h1 style="font-size: 24px;">Wooble Playlist</h1>
+                <!-- Cards-->
+                <div class="cardcontainer"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <footer>
+        <div class="song-name">
+        </div>
+        <div class="navbtns invert  ">
+            <img class="shuffle " src="play bar/shuffle-disabled-icon.svg" alt="shuffle">
+            <img id="back" src="play bar/step-backward-icon.svg" alt="back">
+            <img id="play" src="play bar/play-round-icon.svg" alt="play">
+            <img id="next" src="play bar/step-forward-icon.svg" alt="next">
+
+            <div class="volume">
+                <div class="range">
+                    <input type="range" name="volume" id="">
+                </div>
+                <img width="25" src="play bar/volume.svg" alt="">
+
+                <div class="volume-value">50%</div>
+            </div>
+
+
+        </div>
+        <div class="playbar-footer">
+            <div class=" current-time"> </div>
+            <div class="seekbar">
+                <div class="circle"> </div>
+            </div>
+            <div class=" duration"> </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
